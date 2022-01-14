@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-01-14T13:45:00Z"
+  name: env-config
+  namespace: default
+data:
+  DATABASE_URL: postgresql://drkiq:yourpassword@postgres:5432/drkiq?encoding=utf8
+  LISTEN_ON: 0.0.0.0:8000
+  WORKER_PROCESSES: "1"
+  postgres_host: postgres
+  postgres_password: yourpassword
+  postgres_user: drkiq
+  postgres_db: drkiq_development
+  CACHE_URL: redis://redis:6379/0
+  JOB_WORKER_URL: redis://redis:6379/0
+  SECRET_TOKEN: Wa4Kdu6hMt3tYKm4jb9p4vZUuc7jBVFw
